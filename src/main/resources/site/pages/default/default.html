@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+    <meta name="author" content="Łukasz Holeczek">
+    <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,jQuery,CSS,HTML,RWD,Dashboard">
+    <link rel="shortcut icon" data-th-href="${portal.assetUrl({'_path=favicon.ico'})}" href="%PUBLIC_URL%/favicon.ico">
+    <title>CoreUI - Open Source Bootstrap Admin Template</title>
+
+    <!-- Icons -->
+    <link data-th-href="${portal.assetUrl({'_path=css/font-awesome.min.css'})}" href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link data-th-href="${portal.assetUrl({'_path=css/simple-line-icons.css'})}" href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Main styles for this application -->
+    <link data-th-href="${portal.assetUrl({'_path=dist/app-style.css'})}" href="css/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-active">
+    <div id="root"></div>
+    <script data-th-src="${portal.assetUrl({'_path=react/15.3.2/dist/react.js'})}"></script>
+    <script data-th-src="${portal.assetUrl({'_path=react-dom/15.3.2/dist/react-dom.js'})}"></script>
+    <script data-th-src="${portal.assetUrl({'_path=dist/app-bundle.js'})}" src="../assets/js/custom.js"></script>
+
+    <script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

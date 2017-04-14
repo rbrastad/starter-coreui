@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+<display-name>Starter CoreUI</display-name>
+<info></info>
+<url>http://www.item.no/</url>
+<vendor>
+  <name>Runar Brastad</name>
+  <url>http://rbrastad.no</url>
+</vendor>
+
+</site>

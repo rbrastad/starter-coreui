@@ -1,0 +1,76 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url 'http://repo.enonic.com/public'
+        }
+    }
+
+    dependencies {
+        classpath "com.enonic.xp:gradle-plugin:${xpVersion}"
+        classpath "com.eriwen:gradle-css-plugin:2.14.0"
+        classpath "com.moowork.gradle:gradle-node-plugin:1.1.1"
+    }
+}
+
+
+apply plugin: 'com.moowork.gulp'
+apply plugin: 'maven'
+apply plugin: 'com.enonic.xp.app'
+apply plugin: 'css'
+apply plugin: 'idea'
+apply plugin: 'com.moowork.node'
+
+
+app {
+    name = project.appName
+    displayName = project.displayName
+    vendorName = 'Runar Brastad'
+    vendorUrl = 'http://rbrastad.no'
+}
+
+
+dependencies {
+    compile "com.enonic.xp:core-api:${xpVersion}"
+    compile "com.enonic.xp:portal-api:${xpVersion}"
+
+    include "com.enonic.xp:lib-content:${xpVersion}"
+    include "com.enonic.xp:lib-context:${xpVersion}"
+    include "com.enonic.xp:lib-portal:${xpVersion}"
+    include "com.enonic.xp:lib-thymeleaf:${xpVersion}"
+    include "com.enonic.xp:lib-mail:${xpVersion}"
+    include "com.enonic.xp:lib-auth:${xpVersion}"
+    include "com.enonic.xp:lib-http-client:${xpVersion}"
+    include "com.enonic.lib:util:1.1.1"
+    include "com.enonic.lib:menu:1.1.1"
+
+
+    webjar "org.webjars.npm:react:15.3.2"
+    webjar "org.webjars.npm:react-dom:15.3.2"
+    webjar "org.webjars.npm:reactstrap:4.0.1"
+}
+
+repositories {
+    mavenLocal()
+    jcenter()
+    maven {
+        url 'http://repo.enonic.com/public'
+    }
+}
+
+node {
+    version = '6.9.4'
+    download = true
+}
+
+task webpack(type: NodeTask) {
+    script = file('node_modules/webpack/bin/webpack.js')
+}
+
+webpackWatch.dependsOn 'npmInstall'
+webpackWatch.dependsOn 'build'
+
