@@ -3,19 +3,15 @@
 Starter theme for Core UI (http://coreui.io/) on Enonic XP using React and Bootstrap 4. 
 
 The APP is a pure frontend UI application that lets you develop and deploy react apps running on Enonic XP. 
-All data must come from services in this app, another app os some other source of data.    
+All data must come from services in this app, another app or some other source of data.    
 
 Example site of the application on coreui web site: http://coreui.io/demo/React_Demo/#/
 
 ## Getting started
 
-Download and install the pre-built app with content setup: https://github.com/rbrastad/starter-coreui/tree/with-content-to-import/build/libs  
+### Developing
 
-Take a tour of the installed app.
-
-## Developing
-
-* Download the latest release for the starter kit on github .
+* Download the latest release of the starter kit on github .
 * Rename the application in gradle.properties and build.gradle.
 * Build and deploy to XP server. All dependencies should now be installed and the App is built and deployed
 * Login to XP admin and go to Content Studio and create a site and install the application to the site.
