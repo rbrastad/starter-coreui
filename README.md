@@ -48,6 +48,10 @@ To start transpiling, compiling and bundling use:
 
 This will make webpack watch for changes in react and sass files  
 
+## Livereload
+
+Livereload is by defautl installed int the default page. Changes done to sass or react files will automatically force a refresh on the web page.   
+
 
 ## Compatibility
 
