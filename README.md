@@ -79,6 +79,8 @@ React - https://facebook.github.io/react/
 
 Webpack - https://webpack.github.io/
 
+webpack-livereload-plugin - https://github.com/statianzo/webpack-livereload-plugin
+
 ## Licenses
 
 Core UI - https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/blob/master/LICENSE
@@ -86,3 +88,5 @@ Core UI - https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/blob/m
 React - https://github.com/facebook/react/blob/master/LICENSE
 
 Bootstrap - https://github.com/twbs/bootstrap/blob/master/LICENSE
+
+webpack-livereload-plugin - https://github.com/statianzo/webpack-livereload-plugin/blob/master/LICENSE
