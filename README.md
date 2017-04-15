@@ -57,6 +57,11 @@ Livereload is by default installed when running "webpackWatch". Changes done to 
 
 ## Changelog
 
+### 0.2.0
+
+* Added task webpackWatch when developing with auto transpilling and livereload
+
+
 ### 0.1.0
 
 * Initial setup of Core UI theme
