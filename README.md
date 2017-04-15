@@ -36,14 +36,14 @@ React and sass files needs to be transpiled and compiled when developed. Transpi
 To enable onchange transpiling, compiling and bundling.
  
 ```javascript
-       ./gradlew webpackWatch 
+       ./gradlew dev 
 ```
 
 This will make webpack watch for changes in react and sass files  
 
 ## Livereload
 
-Livereload is by default installed when running "webpackWatch". Changes done to sass or react files will automatically force a refresh on the web page.   
+Livereload is by default installed when running "dev". Changes done to sass or react files will automatically force a refresh on the web page.   
 
 
 ## Compatibility

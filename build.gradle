@@ -71,17 +71,17 @@ task webpack(type: NodeTask) {
     script = file('node_modules/webpack/bin/webpack.js')
 }
 
-task webpackWatch(type: NodeTask) {
+task dev(type: NodeTask) {
     script = file('node_modules/webpack/bin/webpack.js')
     args = [
             "--config",
-            "webpack-watch.config.js"
+            "webpack-dev.config.js"
     ]
 
 }
 
-webpackWatch.dependsOn 'npmInstall'
-webpackWatch.dependsOn 'build'
+dev.dependsOn 'npmInstall'
+dev.dependsOn 'build'
 
 webpack.dependsOn 'npmInstall'
 
