@@ -29,7 +29,7 @@ Temporary Items
 ### Gradle ###
 .gradle
 build/
-!build/libs
+!build/libs/*.jar
 node_modules/
 
 # Ignore Gradle GUI config
