@@ -50,7 +50,9 @@ Livereload is by default installed when running "webpackWatch". Changes done to 
 
 | Version       | XP version |
 | ------------- | ---------- |
+| 0.2.0         | 6.9.0      |
 | 0.1.0         | 6.9.0      |
+
 
 
 ## Changelog
