@@ -59,7 +59,7 @@ Livereload is by default installed when running "dev". Changes done to sass or r
 
 ### 0.2.0
 
-* Added task webpackWatch when developing with auto transpilling and livereload
+* Added task dev when developing with auto transpilling and livereload
 
 
 ### 0.1.0
