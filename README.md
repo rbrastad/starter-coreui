@@ -33,24 +33,17 @@ All SASS files is found in  src -> resources -> assets -> scss
 ### Transpiling and bundling on change
 React and sass files needs to be transpiled and compiled when developed. Transpiling, compiling and bundling is done with webpack.  
  
-To enable onchange transpiling, compiling and bundling we need to edit webpack.config.js
+To enable onchange transpiling, compiling and bundling.
  
- Open webpack.config.js and uncomment:
 ```javascript
-       // watch : true
-```
-
-To start transpiling, compiling and bundling use:
-
-```javascript
-    ./gradlew webpack
+       ./gradlew webpackWatch 
 ```
 
 This will make webpack watch for changes in react and sass files  
 
 ## Livereload
 
-Livereload is by default installed on the default page. Changes done to sass or react files will automatically force a refresh on the web page.   
+Livereload is by default installed when running "webpackWatch". Changes done to sass or react files will automatically force a refresh on the web page.   
 
 
 ## Compatibility

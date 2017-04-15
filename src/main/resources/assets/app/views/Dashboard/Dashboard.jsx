@@ -304,7 +304,7 @@ class Dashboard extends Component {
                   </Dropdown>
                 </div>
                 <h4 className="mb-0">9.823</h4>
-                <p>Members 0040 online</p>
+                <p>Members online</p>
               </div>
               <div className="chart-wrapper px-1">
                 <Line data={cardChartData1} options={cardChartOpts1} height={70}/>

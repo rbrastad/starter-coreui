@@ -27,6 +27,7 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("app-[name].css"),
+        new LiveReloadPlugin({"appendScriptTag":true})
     ],
     module: {
         loaders: [
@@ -44,5 +45,6 @@ module.exports = {
             { test: /\.css$/, loader: "style-loader!css-loader" },
             { test: /\.png$/, loader: "url-loader?limit=100000" }
         ]
-    }
+    },
+    watch : true
 };
