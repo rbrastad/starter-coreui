@@ -70,13 +70,19 @@ This will make webpack watch for changes in react and sass files
 ## External resources
 
 Core UI  - http://coreui.io/
+
 Core UI Documentation -  http://coreui.io/docs/getting-started/introduction
+
 Bootstrap 4 - https://v4-alpha.getbootstrap.com/
+
 React - https://facebook.github.io/react/
+
 Webpack - https://webpack.github.io/
 
 ## Licenses
 
 Core UI - https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/blob/master/LICENSE
+
 React - https://github.com/facebook/react/blob/master/LICENSE
+
 Bootstrap - https://github.com/twbs/bootstrap/blob/master/LICENSE
