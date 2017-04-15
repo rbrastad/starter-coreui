@@ -71,6 +71,6 @@ task webpack(type: NodeTask) {
     script = file('node_modules/webpack/bin/webpack.js')
 }
 
-webpackWatch.dependsOn 'npmInstall'
-webpackWatch.dependsOn 'build'
+webpack.dependsOn 'npmInstall'
+webpack.dependsOn 'build'
 

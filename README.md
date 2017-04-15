@@ -1,31 +1,56 @@
 # Starter Core UI
 
-This is a starter theme for Core UI (http://coreui.io/) and uses is configured to use React for building the UI. 
-The starter kit can be used for building your frontend in React on Enonic XP. 
+Starter theme for Core UI (http://coreui.io/) on Enonic XP using React and Bootstrap 4. 
 
-Example site of the application on core ui web site: http://coreui.io/demo/React_Demo/#/
+The APP is a pure frontend UI application that lets you develop and deploy react apps running on Enonic XP. 
+All data must come from services in this app, another app os some other source of data.    
+
+Example site of the application on coreui web site: http://coreui.io/demo/React_Demo/#/
 
 ## Getting started
 
-Download the starter kit from github.
-rename the application in gradle.properties and build.gradle
-Then deploy to XP server. All dependencies should now be installed and the App is dbuolt and deployed
-Login to XP admin
-Go to Content Studio and create a site and install the application to the site.
-Select a page template. Then choose this app Default Page template.
+* Download the starter kit from github.
+* Build and deploy to XP server. All dependencies should now be installed and the App is built and deployed
+* Login to XP admin and go to Content Studio and create a site and install the application to the site.
+* Select a page template. Then choose Default Page template. The Core UI theme should now be loaded.  
+
+Take a tour of the installed app.
+
+## Developing
+
+When you have successfully deployed and installed the application on Enonic XP.  You are ready to start customizing the app for you're needs.
+
+**Rename the app**
+
+Rename the application in gradle.properties and build.gradle. When this is done deploy and install on server as in the getting started section. 
+
+**React files**
+
+All react files is foud in  src -> resources -> assets -> app
+
+**SASS files**
+
+All SASS files is found in  src -> resources -> assets -> scss
 
 
-For developing uncomment watch in webpack.config.js . This will make webpack listen for changes and then transpile and bundle on any change. 
-
+### Transpiling and bundling on change
+React and sass files needs to be transpiled and compiled when developed. Transpiling, compiling and bundling is done with webpack.  
+ 
+To enable onchange transpiling, compiling and bundling we need to edit webpack.config.js
+ 
+ Open webpack.config.js and uncomment:
 ```javascript
        // watch : true
 ```
 
-Then star tthe webpack task for instant transpiling and bundling.
+To start transpiling, compiling and bundling use:
 
 ```javascript
     ./gradlew webpack
 ```
+
+This will make webpack watch for changes in react and sass files  
+
 
 ## Compatibility
 
@@ -33,11 +58,6 @@ Then star tthe webpack task for instant transpiling and bundling.
 | ------------- | ---------- |
 | 0.1.0         | 6.9.0      |
 
-
-## Projects using this:
-
-Data PULL - https://github.com/rbrastad/data-pull
-Data Console - https://github.com/rbrastad/data-console
 
 ## Changelog
 
@@ -53,6 +73,7 @@ Data Console - https://github.com/rbrastad/data-console
 ## External resources
 
 Core UI  - http://coreui.io/
+Core UI Documentation -  http://coreui.io/docs/getting-started/introduction
 Bootstrap 4 - https://v4-alpha.getbootstrap.com/
 React - https://facebook.github.io/react/
 Webpack - https://webpack.github.io/

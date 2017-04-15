@@ -29,6 +29,7 @@ Temporary Items
 ### Gradle ###
 .gradle
 build/
+!build/libs
 node_modules/
 
 # Ignore Gradle GUI config
