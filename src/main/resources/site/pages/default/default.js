@@ -9,6 +9,7 @@ function handleGet(req) {
     var view = resolve('default.html'); // The view to render
 
     return {
-        body: libs.thymeleaf.render(view, {})
-    };
+        body: libs.thymeleaf.render(view, {}),
+    }
+
 }
