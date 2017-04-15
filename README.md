@@ -9,20 +9,17 @@ Example site of the application on coreui web site: http://coreui.io/demo/React_
 
 ## Getting started
 
-* Download the starter kit from github.
-* Build and deploy to XP server. All dependencies should now be installed and the App is built and deployed
-* Login to XP admin and go to Content Studio and create a site and install the application to the site.
-* Select a page template. Then choose Default Page template. The Core UI theme should now be loaded.  
+Download and install the pre-built app with content setup: https://github.com/rbrastad/starter-coreui/tree/with-content-to-import/build/libs  
 
 Take a tour of the installed app.
 
 ## Developing
 
-When you have successfully deployed and installed the application on Enonic XP.  You are ready to start customizing the app for you're needs.
-
-**Rename the app**
-
-Rename the application in gradle.properties and build.gradle. When this is done deploy and install on server as in the getting started section. 
+* Download the latest release for the starter kit on github .
+* Rename the application in gradle.properties and build.gradle.
+* Build and deploy to XP server. All dependencies should now be installed and the App is built and deployed
+* Login to XP admin and go to Content Studio and create a site and install the application to the site.
+* Select a page template. Then choose Default Page template. The Core UI theme should now be loaded.  
 
 **React files**
 
