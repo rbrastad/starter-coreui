@@ -33,8 +33,8 @@ To enable onchange transpiling, compiling and bundling in developer mode:
 
 ## Livereload
 
-Livereload is by default installed when running "dev". Changes done to sass or react files will automatically force a refresh in the web browser.   
-The files needed for livereload is automatically added to the javasccript bundle in dev mode. 
+Livereload is by default enabled when running "dev". Changes done to sass or react files will automatically force a refresh in the web browser.   
+The files needed for livereload is automatically added to the javascript bundle in dev mode. 
 
 ## Compatibility
 
