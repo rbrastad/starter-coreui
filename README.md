@@ -16,11 +16,11 @@ The APP lets you develop react apps running on Enonic XP. An example of the appl
 
 **React files**
 
-All react files is foud in  src -> resources -> assets -> app
+All react files is in src -> resources -> assets -> app
 
 **SASS files**
 
-All SASS files is found in  src -> resources -> assets -> scss
+All SASS files is in src -> resources -> assets -> scss
 
 ### Transpiling and bundling on change
 React and sass files needs to be transpiled and compiled when developed. Transpiling, compiling and bundling is done with webpack.  
@@ -30,8 +30,6 @@ To enable onchange transpiling, compiling and bundling in developer mode:
 ```javascript
        ./gradlew dev 
 ```
-
-This will make webpack watch for changes in react and sass files  
 
 ## Livereload
 
