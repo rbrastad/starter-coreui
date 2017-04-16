@@ -10,7 +10,7 @@ The APP lets you develop react apps running on Enonic XP. An example of the appl
 
 * Download the latest release of the starter kit on github .
 * Rename the application in gradle.properties and build.gradle.
-* Build and deploy to XP server. All dependencies should now be installed and the App is built and deployed
+* Build and deploy to XP server.
 * Login to XP admin and go to Content Studio and create a site and install the application to the site.
 * Select a page template. Then choose Default Page template. The Core UI theme should now be loaded.  
 
