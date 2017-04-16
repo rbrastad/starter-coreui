@@ -1,6 +1,6 @@
-var libs = {
-    thymeleaf: require('/lib/xp/thymeleaf'),
-};
+
+var thymeleafLib = require('/lib/xp/thymeleaf');
+var authLib = require('/lib/xp/auth');
 
 // Handle GET request
 exports.get = handleGet;
@@ -8,8 +8,12 @@ exports.get = handleGet;
 function handleGet(req) {
     var view = resolve('default.html'); // The view to render
 
+    var model = {
+        user : authLib.getUser()
+    };
+
     return {
-        body: libs.thymeleaf.render(view, {}),
+        body: thymeleafLib.render(view, model),
     }
 
 }

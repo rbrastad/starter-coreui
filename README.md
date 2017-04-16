@@ -1,11 +1,8 @@
-# Starter Core UI
+# Starter Core UI - React - Bootstrap 4
 
 Starter theme for Core UI (http://coreui.io/) on Enonic XP using React and Bootstrap 4. 
 
-The APP is a pure frontend UI application that lets you develop and deploy react apps running on Enonic XP. 
-All data must come from services in this app, another app or some other source of data.    
-
-Example site of the application on coreui web site: http://coreui.io/demo/React_Demo/#/
+The APP lets you develop react apps running on Enonic XP. An example of the application implemented can be viewed here: http://coreui.io/demo/React_Demo/#/
 
 ## Getting started
 
@@ -25,11 +22,10 @@ All react files is foud in  src -> resources -> assets -> app
 
 All SASS files is found in  src -> resources -> assets -> scss
 
-
 ### Transpiling and bundling on change
 React and sass files needs to be transpiled and compiled when developed. Transpiling, compiling and bundling is done with webpack.  
  
-To enable onchange transpiling, compiling and bundling.
+To enable onchange transpiling, compiling and bundling in developer mode:
  
 ```javascript
        ./gradlew dev 
@@ -46,12 +42,16 @@ The files needed for livereload is automatically added to the javasccript bundle
 
 | Version       | XP version |
 | ------------- | ---------- |
+| 0.3.0         | 6.9.0      |
 | 0.2.0         | 6.9.0      |
 | 0.1.0         | 6.9.0      |
 
-
-
 ## Changelog
+
+### 0.3.0
+
+* Added AssetImage component for loading images from assets folder on server.
+
 
 ### 0.2.0
 

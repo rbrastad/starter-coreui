@@ -145,7 +145,7 @@ class Forms extends Component {
                 <strong>Basic Form</strong> Elements
               </div>
               <div className="card-block">
-                <form action="" method="post" enctype="multipart/form-data" className="form-horizontal ">
+                <form action="" method="post" encType="multipart/form-data" className="form-horizontal ">
                   <div className="form-group row">
                     <label className="col-md-3 form-control-label">Static</label>
                     <div className="col-md-9">

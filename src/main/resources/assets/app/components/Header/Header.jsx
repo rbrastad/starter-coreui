@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Dropdown, DropdownMenu, DropdownItem } from 'reactstrap';
+import AssetImage from '../../enonic/AssetImage'
 
 class Header extends Component {
 
@@ -62,7 +63,7 @@ class Header extends Component {
                 <li className="nav-item">
                   <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                     <a onClick={this.toggle} className="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded={this.state.dropdownOpen}>
-                      <img src={'img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
+                      <AssetImage imageSrc="img/avatars/6.jpg" className="img-avatar" alt="admin@bootstrapmaster.com"/>
                       <span className="hidden-md-down">admin</span>
                     </a>
 

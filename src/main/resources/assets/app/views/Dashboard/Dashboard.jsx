@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Bar, Line } from 'react-chartjs-2';
 import { Dropdown, DropdownMenu, DropdownItem, Progress } from 'reactstrap';
+import AssetImage from '../../enonic/AssetImage';
 
 const brandPrimary =  '#20a8d8';
 const brandSuccess =  '#4dbd74';
@@ -829,7 +830,7 @@ class Dashboard extends Component {
                     <tr>
                       <td className="text-center">
                         <div className="avatar">
-                          <img src={'img/avatars/1.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
+                          <AssetImage imageSrc={'img/avatars/1.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
                           <span className="avatar-status badge-success"></span>
                         </div>
                       </td>
@@ -840,7 +841,7 @@ class Dashboard extends Component {
                         </div>
                       </td>
                       <td className="text-center">
-                        <img src={'img/flags/USA.png'} alt="USA" style={{height: 24 + 'px'}}/>
+                        <AssetImage imageSrc={'img/flags/USA.png'} alt="USA" style={{height: 24 + 'px'}}/>
                       </td>
                       <td>
                         <div className="clearfix">
@@ -864,7 +865,7 @@ class Dashboard extends Component {
                     <tr>
                       <td className="text-center">
                         <div className="avatar">
-                          <img src={'img/avatars/2.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
+                          <AssetImage imageSrc={'img/avatars/2.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
                           <span className="avatar-status badge-danger"></span>
                         </div>
                       </td>
@@ -876,7 +877,7 @@ class Dashboard extends Component {
                         </div>
                       </td>
                       <td className="text-center">
-                        <img src={'img/flags/Brazil.png'} alt="Brazil" style={{height: 24 + 'px'}}/>
+                        <AssetImage imageSrc={'img/flags/Brazil.png'} alt="Brazil" style={{height: 24 + 'px'}}/>
                       </td>
                       <td>
                         <div className="clearfix">
@@ -900,7 +901,7 @@ class Dashboard extends Component {
                     <tr>
                       <td className="text-center">
                         <div className="avatar">
-                          <img src={'img/avatars/3.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
+                          <AssetImage imageSrc={'img/avatars/3.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
                           <span className="avatar-status badge-warning"></span>
                         </div>
                       </td>
@@ -911,7 +912,7 @@ class Dashboard extends Component {
                         </div>
                       </td>
                       <td className="text-center">
-                        <img src={'img/flags/India.png'} alt="India" style={{height: 24 + 'px'}}/>
+                        <AssetImage imageSrc={'img/flags/India.png'} alt="India" style={{height: 24 + 'px'}}/>
                       </td>
                       <td>
                         <div className="clearfix">
@@ -935,7 +936,7 @@ class Dashboard extends Component {
                     <tr>
                       <td className="text-center">
                         <div className="avatar">
-                          <img src={'img/avatars/4.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
+                          <AssetImage imageSrc={'img/avatars/4.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
                           <span className="avatar-status badge-default"></span>
                         </div>
                       </td>
@@ -946,7 +947,7 @@ class Dashboard extends Component {
                         </div>
                       </td>
                       <td className="text-center">
-                        <img src={'img/flags/France.png'} alt="France" style={{height: 24 + 'px'}}/>
+                        <AssetImage imageSrc={'img/flags/France.png'} alt="France" style={{height: 24 + 'px'}}/>
                       </td>
                       <td>
                         <div className="clearfix">
@@ -970,7 +971,7 @@ class Dashboard extends Component {
                     <tr>
                       <td className="text-center">
                         <div className="avatar">
-                          <img src={'img/avatars/5.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
+                          <AssetImage imageSrc={'img/avatars/5.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
                           <span className="avatar-status badge-success"></span>
                         </div>
                       </td>
@@ -981,7 +982,7 @@ class Dashboard extends Component {
                         </div>
                       </td>
                       <td className="text-center">
-                        <img src={'img/flags/Spain.png'} alt="Spain" style={{height: 24 + 'px'}}/>
+                        <AssetImage imageSrc={'img/flags/Spain.png'} alt="Spain" style={{height: 24 + 'px'}}/>
                       </td>
                       <td>
                         <div className="clearfix">
@@ -1005,7 +1006,7 @@ class Dashboard extends Component {
                     <tr>
                       <td className="text-center">
                         <div className="avatar">
-                          <img src={'img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
+                          <AssetImage imageSrc={'img/avatars/6.jpg'} className="img-avatar" alt="admin@bootstrapmaster.com"/>
                           <span className="avatar-status badge-danger"></span>
                         </div>
                       </td>
@@ -1016,7 +1017,7 @@ class Dashboard extends Component {
                         </div>
                       </td>
                       <td className="text-center">
-                        <img src={'img/flags/Poland.png'} alt="Poland" style={{height: 24 + 'px'}}/>
+                        <AssetImage imageSrc={'img/flags/Poland.png'} alt="Poland" style={{height: 24 + 'px'}}/>
                       </td>
                       <td>
                         <div className="clearfix">

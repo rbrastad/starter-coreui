@@ -20,6 +20,16 @@
 </head>
 <body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-active">
     <div id="root"></div>
+
+    <script data-th-inline="javascript">
+        /*<![CDATA[*/
+            window.enonic = {
+                "servicesUrl" : [[${portal.serviceUrl({'_service='})}]],
+                "user" : [[${ user }]],
+                "assetUrl" : [[${portal.assetUrl({})} + '/']]
+            }
+        /*]]>*/
+    </script>
     <script data-th-src="${portal.assetUrl({'_path=react/15.3.2/dist/react.js'})}"></script>
     <script data-th-src="${portal.assetUrl({'_path=react-dom/15.3.2/dist/react-dom.js'})}"></script>
     <script data-th-src="${portal.assetUrl({'_path=dist/app-bundle.js'})}" src="../assets/js/custom.js"></script>

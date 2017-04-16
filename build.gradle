@@ -25,14 +25,12 @@ apply plugin: 'css'
 apply plugin: 'idea'
 apply plugin: 'com.moowork.node'
 
-
 app {
     name = project.appName
     displayName = project.displayName
     vendorName = 'Runar Brastad'
-    vendorUrl = 'http://rbrastad.no'
+    vendorUrl = 'https://github.com/rbrastad'
 }
-
 
 dependencies {
     compile "com.enonic.xp:core-api:${xpVersion}"
@@ -86,4 +84,3 @@ dev.dependsOn 'build'
 webpack.dependsOn 'npmInstall'
 
 build.dependsOn 'webpack'
-
