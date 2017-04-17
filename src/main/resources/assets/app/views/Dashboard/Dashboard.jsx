@@ -339,7 +339,7 @@ class Dashboard extends Component {
                     <a className="dropdown-item" href="#">Action</a>
                     <a className="dropdown-item" href="#">Another action</a>
                     <a className="dropdown-item" href="#">Something else here</a>
-                  </div>
+                  </div>z
                 </div>
                 <h4 className="mb-0">9.823</h4>
                 <p>Members online</p>
