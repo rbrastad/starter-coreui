@@ -10,7 +10,8 @@ In developer mode livereload is enabled so changes in react and sass files will 
   
 
 An example of the application implemented can be viewed here: http://coreui.io/demo/React_Demo/#/
-An pre-built app can be found in /build/libs folder
+
+An pre-built app can be found in **/build/libs** folder
 
 ## Getting started
 
