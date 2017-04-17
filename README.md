@@ -101,6 +101,8 @@ webpack-livereload-plugin - https://github.com/statianzo/webpack-livereload-plug
 
 ## Licenses
 
+Starter Core UI - https://github.com/rbrastad/starter-coreui/blob/master/LICENSE
+
 Core UI - https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/blob/master/LICENSE
 
 React - https://github.com/facebook/react/blob/master/LICENSE
