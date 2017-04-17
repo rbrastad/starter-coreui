@@ -1,4 +1,4 @@
-# This is an Enonic XP implementation of Core UI (http://coreui.io/) with React. 
+# Enonic XP implementation of Core UI (http://coreui.io/) with React. 
 
 ![Core UI](src/main/resources/assets/img/screenshots/coreui-dashboard.png)
 
