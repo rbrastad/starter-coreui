@@ -12,18 +12,15 @@ buildscript {
 
     dependencies {
         classpath "com.enonic.xp:gradle-plugin:${xpVersion}"
-        classpath "com.eriwen:gradle-css-plugin:2.14.0"
         classpath "com.moowork.gradle:gradle-node-plugin:1.1.1"
     }
 }
 
-
+apply plugin: 'com.enonic.xp.app'
+apply plugin: 'com.moowork.node'
 apply plugin: 'com.moowork.gulp'
 apply plugin: 'maven'
-apply plugin: 'com.enonic.xp.app'
-apply plugin: 'css'
 apply plugin: 'idea'
-apply plugin: 'com.moowork.node'
 
 app {
     name = project.appName
@@ -65,11 +62,20 @@ node {
     download = true
 }
 
+task dev(type: GulpTask, dependsOn: 'installGulp') {
+    args = ["--color", "--gulpfile", "gulpfile.js","watch"]
+}
+
+task gulp_build(type: GulpTask, dependsOn: 'installGulp') {
+    description = 'Build for production using gulp'
+    args = ["--color", "--gulpfile", "gulpfile.js"]
+}
+
 task webpack(type: NodeTask) {
     script = file('node_modules/webpack/bin/webpack.js')
 }
 
-task dev(type: NodeTask) {
+task webpackDev(type: NodeTask) {
     script = file('node_modules/webpack/bin/webpack.js')
     args = [
             "--config",
@@ -78,9 +84,8 @@ task dev(type: NodeTask) {
 
 }
 
-dev.dependsOn 'npmInstall'
+installGulp.dependsOn 'npmInstall'
 dev.dependsOn 'build'
 
-webpack.dependsOn 'npmInstall'
-
-build.dependsOn 'webpack'
+build.dependsOn 'gulp_build'
+build.mustRunAfter 'gulp_build'

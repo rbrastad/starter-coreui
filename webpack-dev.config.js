@@ -7,13 +7,13 @@ var paths = {
     appSrc: 'src/main/resources/assets/app',
     app: 'build/resources/main/assets/app',
     appDistPath: 'build/resources/main/assets/dist',
-    scssSrc: 'src/main/resources/assets/scss/style.scss',
+    scssSrc: 'src/main/resources/assets/scss/style.scss'
 };
 
 module.exports = {
     entry: {
         app: path.join(__dirname, paths.appSrc),
-        style: path.join(__dirname, paths.scssSrc)
+        style: path.join(__dirname, paths.scssSrc),
     },
     resolve: {
         root: [
@@ -38,11 +38,11 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract(
+                loader:  ExtractTextPlugin.extract(
                     "style",
                     "css!sass")
             },
-            { test: /\.css$/, loader: "style-loader!css-loader" },
+            { test: /\.css$/, loader: "css-loader" },
             { test: /\.png$/, loader: "url-loader?limit=100000" }
         ]
     },

@@ -1,7 +1,8 @@
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
 
-var path = require('path');
-var paths = {
+const path = require('path');
+const paths = {
     root: 'src/main/resources',
     appSrc: 'src/main/resources/assets/app',
     app: 'build/resources/main/assets/app',
@@ -26,6 +27,12 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin("app-[name].css"),
+        // Minify assets.
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false // https://github.com/webpack/webpack/issues/1496
+            }
+        })
     ],
     module: {
         loaders: [
@@ -36,7 +43,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract(
+                loader:  ExtractTextPlugin.extract(
                     "style",
                     "css!sass")
             },
