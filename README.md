@@ -23,7 +23,7 @@ All react files is in src -> resources -> assets -> app
 All SASS files is in src -> resources -> assets -> scss
 
 ### Transpiling and bundling on change
-React and sass files needs to be transpiled and compiled when developed. Transpiling, compiling and bundling is done with webpack.  
+React and sass files needs to be transpiled and compiled when developed. Transpiling, compiling and bundling of assets is done with webpack. Babel transpiles ES6 files.
  
 To enable onchange transpiling, compiling and bundling in developer mode:
  
@@ -36,15 +36,26 @@ To enable onchange transpiling, compiling and bundling in developer mode:
 Livereload is by default enabled when running "dev". Changes done to sass or react files will automatically force a refresh in the web browser.   
 The files needed for livereload is automatically added to the javascript bundle in dev mode. 
 
+!! Currently you need to do a change in scss or react files after the tasks is started to add livereload to the bundle created.
+
 ## Compatibility
 
 | Version       | XP version |
 | ------------- | ---------- |
+| 0.4.0         | 6.9.0      |
 | 0.3.0         | 6.9.0      |
 | 0.2.0         | 6.9.0      |
 | 0.1.0         | 6.9.0      |
 
 ## Changelog
+
+### 0.4.0
+
+* Added ES6 transpiling for serverside javascript files.
+* Added minifying of assets bundle for build task 
+* Added gulp for watching for changes in ES6 files and jsx files.
+* Added ES6 example service whoami and library auth  
+
 
 ### 0.3.0
 
