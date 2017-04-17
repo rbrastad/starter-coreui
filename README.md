@@ -5,8 +5,8 @@ This is an Enonic XP implementation of Core UI (http://coreui.io/) with React.
 The theme and app can be used as a starter for an application that is created with React and Bootstrap 4. 
 The theme contains examples of tabs, cards, dashboard and BS4 components that can be used in an application. Fonts and colors can be be changed with SASS.
 
-Build and developer tools has been setup for both developer and production mode. Developer contains transpiling and bundling of React and SASS files with webpack. ES6 files can be created and will be transpiled by Babel.
-In developer mode livereload is enabled so changes in react and sass files will automatically refresh the browser. When the app is ready for production the build task enable compressing and minification of the bundle files.    
+Build and developer tools has been setup for both developer and production mode. Developer mode contains transpiling and bundling of React and SASS files with webpack. ES6 files can be created and will be transpiled by Babel.
+In developer mode livereload is enabled so changes in react and sass files will automatically refresh the browser. When the app is ready for production the build task do compressing of the bundle files.    
   
 
 The APP lets you develop react apps running on Enonic XP. An example of the application implemented can be viewed here: http://coreui.io/demo/React_Demo/#/
