@@ -1,5 +1,7 @@
 # Starter Core UI - React - Bootstrap 4
 
+![Core UI](https://raw.githubusercontent.com/rbrastad/starter-coreui/master/src/main/resources/assets/img/screenshots/coreui-dashboard.png)
+
 This is an Enonic XP implementation of Core UI (http://coreui.io/) with React. 
 
 The theme and app can be used as a starter for an application that is created with React and Bootstrap 4. 
