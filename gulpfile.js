@@ -11,19 +11,15 @@ var buildAssets = buildSite + '/assets/dist';
 var gulp = require('gulp');
 var babel = require('gulp-babel');
 var gulpWebpack = require('webpack-stream');
-var plumber = require('gulp-plumber');
+var prettyError = require('gulp-prettyerror');
+
 
 gulp.task('default',['babel', 'webpack']);
 
 gulp.task('webpack', function() {
     return gulp
         .src( srcAssetsApp )
-        .pipe(plumber({
-            handleError: function (err) {
-                console.log(err);
-                this.emit('end');
-            }
-        }))
+        .pipe(prettyError())
         .pipe(gulpWebpack(require('./webpack.config.js')))
         .pipe(gulp.dest(buildAssets));
 });
@@ -32,12 +28,7 @@ gulp.task('webpack', function() {
 gulp.task('webpack-dev', function() {
     return gulp
         .src( srcAssetsApp )
-        .pipe(plumber({
-            handleError: function (err) {
-                console.log(err);
-                this.emit('end');
-            }
-        }))
+        .pipe(prettyError())
         .pipe(gulpWebpack(require('./webpack-dev.config.js')))
         .pipe(gulp.dest(buildAssets));
 });
@@ -45,12 +36,7 @@ gulp.task('webpack-dev', function() {
 
 gulp.task('babel', () => {
     return gulp.src( srcES6 )
-        .pipe(plumber({
-            handleError: function (err) {
-                console.log(err);
-                this.emit('end');
-            }
-        }))
+        .pipe(prettyError())
         .pipe(babel({
             presets: [
                 ['es2015', {'modules': false}]
