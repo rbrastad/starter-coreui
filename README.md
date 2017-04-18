@@ -1,4 +1,4 @@
-# Starter Core UI - Enonic XP implementation of Core UI (http://coreui.io/) with React. 
+# Starter Core UI - Enonic XP implementation of Core UI with React. 
 
 ![Core UI](src/main/resources/assets/img/screenshots/coreui-dashboard.png)
 
@@ -10,7 +10,6 @@ Build and developer tools has been setup for both developer and production mode.
 Developer mode contains transpiling and bundling of React and SASS files with webpack. ES6 files can be created and will be transpiled by Babel.
 In developer mode livereload is enabled so changes in react and sass files will automatically refresh the browser. When the app is ready for production the build task compresses the bundle files.    
   
-
 An example of the application implemented can be viewed here: http://coreui.io/demo/React_Demo/#/
 
 An pre-built app can be found in **/build/libs** folder
