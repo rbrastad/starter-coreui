@@ -50,12 +50,12 @@ The files needed for livereload is automatically added to the javascript bundle 
 
 ## Compatibility
 
-| Version       | XP version |
-| ------------- | ---------- |
-| 0.4.0         | 6.9.0      |
-| 0.3.0         | 6.9.0      |
-| 0.2.0         | 6.9.0      |
-| 0.1.0         | 6.9.0      |
+| Version       | XP version | Download |
+| ------------- | ---------- | -------- |  
+| 0.4.0         | 6.9.0      | [Download](https://github.com/rbrastad/starter-coreui/raw/master/build/libs/app.coreui.starter-0.4.0.jar)|
+| 0.3.0         | 6.9.0      |          | 
+| 0.2.0         | 6.9.0      |          | 
+| 0.1.0         | 6.9.0      |          |
 
 ## Changelog
 
