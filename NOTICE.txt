@@ -1,0 +1,13 @@
+Other software licenses used by this product:
+
+Core UI
+https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template/blob/master/LICENSE
+
+React
+https://github.com/facebook/react/blob/master/LICENSE
+
+Bootstrap
+https://github.com/twbs/bootstrap/blob/master/LICENSE
+
+webpack-livereload-plugin
+https://github.com/statianzo/webpack-livereload-plugin/blob/master/LICENSE
