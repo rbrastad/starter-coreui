@@ -45,7 +45,6 @@ gulp.task('babel', () => {
         .pipe(gulp.dest( buildSite ));
 });
 
-
 gulp.task('watch', function() {
     gulp.watch( srcES6 , ['babel']);
     gulp.watch( srcAssetsApp , ['webpack-dev']);

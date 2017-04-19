@@ -11,7 +11,7 @@ export function whoami() {
 
     let whoami = {
      user,
-    "memberships" : getMemberships( user.key )
+    "memberships" : getMemberships( user.key ),
     };
 
     return whoami;
