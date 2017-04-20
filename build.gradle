@@ -13,6 +13,7 @@ buildscript {
     dependencies {
         classpath "com.enonic.xp:gradle-plugin:${xpVersion}"
         classpath "com.moowork.gradle:gradle-node-plugin:1.1.1"
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
     }
 }
 
@@ -21,6 +22,7 @@ apply plugin: 'com.moowork.node'
 apply plugin: 'com.moowork.gulp'
 apply plugin: 'maven'
 apply plugin: 'idea'
+apply plugin: 'com.jfrog.bintray'
 
 app {
     name = project.appName
@@ -89,3 +91,25 @@ dev.dependsOn 'build'
 
 build.dependsOn 'gulp_build'
 build.mustRunAfter 'gulp_build'
+
+
+bintray {
+    user = "$bintrayUser"
+    key = "$bintrayApiKey"
+    publish = true
+    pkg {
+        repo = 'enonic'
+        name = project.appName
+        userOrg = 'rbrastad'
+        licenses = ['MIT']
+        vcsUrl = 'https://github.com/rbrastad/starter-coreui'
+        githubReleaseNotesFile = 'README.md' //Optional Github readme file
+        githubRepo = 'rbrastad/starter-coreui' //Optional Github repository
+
+        version {
+            name = project.version
+            released = new Date()
+            configurations = ['archives']
+        }
+    }
+}
