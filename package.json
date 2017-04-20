@@ -6,6 +6,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "chart.js": "^2.4.0",
     "css-loader": "^0.28.0",
+    "del": "^2.2.2",
     "gulp-babel": "^6.1.2",
     "gulp-plumber": "^1.1.0",
     "node-sass": "^4.5.2",

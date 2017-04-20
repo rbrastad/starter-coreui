@@ -92,10 +92,12 @@ dev.dependsOn 'build'
 build.dependsOn 'gulp_build'
 build.mustRunAfter 'gulp_build'
 
+def bintrayUser = hasProperty('bintrayUser') ? bintrayUser: ''
+def bintrayApiKey = hasProperty('bintrayApiKey') ? bintrayApiKey : ''
 
 bintray {
-    user = "$bintrayUser"
-    key = "$bintrayApiKey"
+    user = bintrayUser
+    key = bintrayApiKey
     publish = true
     pkg {
         repo = 'enonic'
