@@ -4,7 +4,7 @@
 
 An app that can be used as a starter for an application that is going to be created with React and Bootstrap 4. 
 
-The theme contains examples of tabs, cards, dashboard and BS4 components that can be used in an application. Fonts and colors can be changed with SASS.
+The theme contains examples of tabs, cards, dashboard and BS4 components that can be used in an application. Styling can be changed with SASS.
 Build and developer tools has been setup for both developer and production mode. 
 
 Developer mode contains transpiling and bundling of React and SASS files with webpack. ES6 files can be created and will be transpiled by Babel.
