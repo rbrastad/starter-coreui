@@ -58,6 +58,10 @@ The files needed for livereload is automatically added to the javascript bundle 
 
 ## Changelog
 
+### 0.5.0
+
+* Renamed application name for Enonic Market
+
 ### 0.4.0
 
 * Added ES6 transpiling for serverside javascript files.
