@@ -50,6 +50,7 @@ The files needed for livereload is automatically added to the javascript bundle 
 
 | Version       | XP version | Download |
 | ------------- | ---------- | -------- |  
+| 0.5.0         | 6.9.0      | [Download](https://bintray.com/rbrastad/enonic/download_file?file_path=no%2Frbrastad%2Fenonic%2Fstarter%2Fcoreui%2F0.5.0%2Fcoreui-0.5.0.jar) |
 | 0.4.0         | 6.9.0      | [Download](https://bintray.com/rbrastad/enonic/download_file?file_path=no%2Frbrastad%2Fenonic%2Fapp.coreui.starter%2F0.4.0%2Fapp.coreui.starter-0.4.0.jar)|
 | 0.3.0         | 6.9.0      |          | 
 | 0.2.0         | 6.9.0      |          | 
