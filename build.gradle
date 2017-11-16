@@ -37,12 +37,14 @@ dependencies {
     include "com.enonic.xp:lib-context:${xpVersion}"
     include "com.enonic.xp:lib-portal:${xpVersion}"
     include "com.enonic.xp:lib-thymeleaf:${xpVersion}"
+    include "com.enonic.xp:lib-mustache:${xpVersion}"
     include "com.enonic.xp:lib-mail:${xpVersion}"
     include "com.enonic.xp:lib-auth:${xpVersion}"
     include "com.enonic.xp:lib-http-client:${xpVersion}"
     include "com.enonic.lib:util:1.1.1"
     include "com.enonic.lib:menu:1.1.1"
 
+    include 'com.enonic.lib:lib-router:1.0.0'
 
     webjar "org.webjars.npm:react:15.3.2"
     webjar "org.webjars.npm:react-dom:15.3.2"

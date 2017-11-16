@@ -4,7 +4,7 @@ const webpack = require('webpack');
 const path = require('path');
 const paths = {
     root: 'src/main/resources',
-    appSrc: 'src/main/resources/assets/app',
+    appSrc: 'src/main/resources/app',
     app: 'build/resources/main/assets/app',
     appDistPath: 'build/resources/main/assets/dist',
     scssSrc: 'src/main/resources/assets/scss/style.scss',
