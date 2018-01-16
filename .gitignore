@@ -5,7 +5,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon 
+bin/
 
 
 # Thumbnails
@@ -92,3 +93,4 @@ crashlytics-build.properties
 *.css.map
 
 local.properties
+bin
