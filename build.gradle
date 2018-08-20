@@ -43,7 +43,6 @@ dependencies {
     include "com.enonic.lib:util:1.1.1"
     include "com.enonic.lib:menu:1.1.1"
 
-
     webjar "org.webjars.npm:react:15.3.2"
     webjar "org.webjars.npm:react-dom:15.3.2"
     webjar "org.webjars.npm:reactstrap:4.0.1"
@@ -89,3 +88,13 @@ dev.dependsOn 'build'
 
 build.dependsOn 'gulp_build'
 build.mustRunAfter 'gulp_build'
+
+configurations.each {
+    c -> c.resolutionStrategy.dependencySubstitution {
+        all { DependencySubstitution dependency ->
+            if (dependency.requested.group == 'org.webjars.npm') {
+                dependency.useTarget 'org.webjars.npm:js-tokens:3.0.2'
+            }
+        }
+    }
+}
